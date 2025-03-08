@@ -41,6 +41,8 @@ html[xmlns] .clearfix {
   height: 1%;
 }
 
+
+
 ul, li {
   padding: 0;
   margin: 0;
@@ -310,7 +312,29 @@ Header Style
   margin-top:-13px!important;
   height:68px;
 }
-
+.logo1 img{
+  margin-top:10px!important;
+  height:58px;
+  width:60%;
+  position:absolute;
+}
+.sm-show{
+  display:none;
+}
+.lg-show{
+  display:inline;
+}
+@media (max-width:960px) {
+ 
+  .lg-show{
+    display:none;
+  }
+}
+@media (max-width:660px) {
+  .sm-show{
+    display:inline;
+  }
+}
 .header-area .main-nav #search {
   position: relative;
 }
@@ -762,10 +786,16 @@ Services Style
   background: var(--bs-secondary);
   border-radius: 50%;
   position: absolute;
-  left:36%;
+  left:26%;
   top:-17%;
 }
-
+@media (max-width:700px){
+  .services .service-item .icon {
+    top:2%;
+    left:70%;
+    right:6%;
+  }
+}
 .services .service-item .icon img {
   max-width: 50px;
   transition: all .2s;
@@ -914,6 +944,7 @@ Courses Style
 
 .event_filter li {
   display: inline-block;
+  margin: 10px!important;;
 }
 
 .event_filter li a {
@@ -1596,11 +1627,12 @@ Footer Style
 */
 
 footer {
-  margin-top: 150px;
+  margin-top: 50px;
   position: relative;
   background: var(--bs-primary);
   vertical-align: middle;
-  min-height: 150px;
+  min-height: 50px;
+  max-height: 150px;
   border-radius: 150px 150px 0px 0px;
 }
 
