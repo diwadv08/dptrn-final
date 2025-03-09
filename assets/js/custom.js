@@ -58,12 +58,16 @@
 
 
 	$('.owl-banner').owlCarousel({
-		center: true,
+	  center: true,
       items:1,
       loop:true,
       nav: true,
 	  navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
       margin:30,
+	  autoplay: true, // Enable autoplay
+	  autoplayTimeout:6000, // Set autoplay speed (3 seconds)
+	  autoplayHoverPause: true, // Pause autoplay on hover
+	  smartSpeed:2000,
       responsive:{
         992:{
             items:1

@@ -267,7 +267,6 @@ Header Style
 
 .background-header {
   background: var(--bs-primary) !important;
-  border-radius: 0px 0px 25px 25px;
   height: 80px!important;
   position: fixed!important;
   top: 0!important;
@@ -786,7 +785,7 @@ Services Style
   background: var(--bs-secondary);
   border-radius: 50%;
   position: absolute;
-  left:26%;
+  left:40%;
   top:-17%;
 }
 @media (max-width:700px){
@@ -936,7 +935,7 @@ Courses Style
 .event_filter {
   background: var(--bs-bg2);
   border-radius: 50px;
-  padding: 15px 10px;
+  padding: 15px 0px;
   list-style: none;
   margin: 0 auto 70px;
   max-width: max-content;
@@ -944,7 +943,16 @@ Courses Style
 
 .event_filter li {
   display: inline-block;
-  margin: 10px!important;;
+  width:24%;
+}
+
+@media (max-width:700px) {
+  .event_filter li {
+    display: inline-block;
+    width:100%;
+    margin:10px 0!important;
+  }
+  
 }
 
 .event_filter li a {
@@ -968,7 +976,7 @@ Courses Style
 }
 .events_item .thumb {
   position: relative;
-  border-radius: 25px;
+  border-radius: 25px 25px 0 0;
   overflow: hidden;
 }
 
@@ -1310,7 +1318,7 @@ Events Style
 }
 
 .events .item {
-  background: var(--bs-bg1);
+  background: var(--bs-bg2);
   border-radius: 25px;
   position: relative;
   padding: 40px;
@@ -1324,6 +1332,7 @@ Events Style
 .events .item .image img {
   position: absolute;
   border-radius: 25px;
+  border:8px solid var(--bs-primary);
   max-width: 260px;
   left: 0;
   top: -70px;
@@ -1346,11 +1355,11 @@ Events Style
 .events .item ul li span.category {
   font-size: 14px;
   text-transform: uppercase;
-  color: var(--bs-secondary);
-  background: #fff;
+  color: var(--bs-primary);
+  background: #ffffff;
   padding: 8px 20px;
   border-radius: 25px;
-  font-weight: 500;
+  font-weight: 700;
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -1369,7 +1378,7 @@ Events Style
 
 .events .item ul li h6 {
   font-size: 16px;
-  color: var(--bs-secondary);
+  color: var(--bs-primary);
   font-weight: 600;
 }
 
@@ -1377,7 +1386,7 @@ Events Style
   position: absolute;
   right: 0;
   top: 22px;
-  background: var(--bs-secondary);
+  background: var(--bs-primary);
   width: 60px;
   height: 120px;
   display: inline-block;
@@ -1631,16 +1640,16 @@ footer {
   position: relative;
   background: var(--bs-primary);
   vertical-align: middle;
-  min-height: 50px;
-  max-height: 150px;
+  max-height: 170px;
   border-radius: 150px 150px 0px 0px;
 }
 
 footer p {
   text-align: center;
-  line-height: 150px;
   color: #fff;
   font-weight: 400;
+  padding:50px 0;
+  margin-bottom:0;
 }
 
 footer p a {
